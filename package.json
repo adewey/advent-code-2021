@@ -1,0 +1,27 @@
+{
+  "name": "advent-code-2021",
+  "version": "1.0.0",
+  "description": "advent of code 2021",
+  "main": "./index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Aaron Dewey (aaron@aarondewey.com)",
+  "license": "MIT",
+  "repository": "adewey/advent-code-2021",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5"
+  }
+}

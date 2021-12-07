@@ -1,13 +1,7 @@
-const expSteps = steps => {
-  let total = 0;
-  for (let n = 0; n < steps; n++) {
-    total += steps - n;
-  }
-  return total;
+const fuelCalc = (crab, alignment, exp) => {
+  const steps = Math.abs(crab - alignment);
+  return exp ? (steps * (steps + 1)) / 2 : steps;
 };
-
-const fuelCalc = (crab, alignment, exp) =>
-  exp ? expSteps(Math.abs(crab - alignment)) : Math.abs(crab - alignment);
 
 const alignCrabs = (crabList, alignment, exp) =>
   crabList.reduce((fuel, crab) => fuel + fuelCalc(crab, alignment, exp), 0);
